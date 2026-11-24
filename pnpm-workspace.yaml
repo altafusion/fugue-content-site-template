@@ -20,12 +20,21 @@ allowBuilds:
 patchedDependencies:
   nuxt-studio@1.8.2: patches/nuxt-studio@1.8.2.patch
 minimumReleaseAgeExclude:
-  - '@altafusion/eslint-config@0.3.2 || 0.3.3'
-  - '@altafusion/fugue-content@0.3.2 || 0.3.3'
-  - '@altafusion/fugue-nuxt-ui@0.3.2 || 0.3.3'
-  - '@altafusion/fugue-simple-auth@0.3.2 || 0.3.3'
-  - '@altafusion/fugue-theme@0.3.2 || 0.3.3'
-  - '@altafusion/fugue-ui@0.3.2 || 0.3.3'
-  - '@altafusion/nuxt-base@0.3.2 || 0.3.3'
-  - '@altafusion/shell@0.3.2 || 0.3.3'
-  - '@altafusion/test-kit@0.3.2 || 0.3.3'
+  - '@altafusion/eslint-config@0.3.2 || 0.3.3 || 0.3.4'
+  - '@altafusion/fugue-content@0.3.2 || 0.3.3 || 0.3.4'
+  - '@altafusion/fugue-nuxt-ui@0.3.2 || 0.3.3 || 0.3.4'
+  - '@altafusion/fugue-simple-auth@0.3.2 || 0.3.3 || 0.3.4'
+  - '@altafusion/fugue-theme@0.3.2 || 0.3.3 || 0.3.4'
+  - '@altafusion/fugue-ui@0.3.2 || 0.3.3 || 0.3.4'
+  - '@altafusion/nuxt-base@0.3.2 || 0.3.3 || 0.3.4'
+  - '@altafusion/shell@0.3.2 || 0.3.3 || 0.3.4'
+  - '@altafusion/test-kit@0.3.2 || 0.3.3 || 0.3.4'
+  - '@nuxt/kit@4.7.0'
+  - '@nuxt/nitro-server@4.7.0'
+  - '@nuxt/nitro-v3-server@4.7.0'
+  - '@nuxt/schema@4.7.0'
+  - '@nuxt/ui@4.13.1'
+  - '@nuxt/vite-builder@4.7.0'
+  - '@nuxt/vite-server@4.7.0'
+  - nitropack@2.14.0
+  - nuxt@4.7.0
