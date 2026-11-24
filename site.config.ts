@@ -70,7 +70,7 @@ export const siteConfigAuth = fugueContentAuthModeSection('studio')
 
 // Replace OWNER and REPO with the GitHub repository Studio commits to.
 export const siteConfigStudio = fugueContentStudioSection({
-  rootDir: '.',
+  rootDir: '',
   messagePrefix: 'content:',
   owner: 'OWNER',
   repo: 'REPO'
