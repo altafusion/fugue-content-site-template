@@ -1,0 +1,14 @@
+@import '@altafusion/fugue-theme/themes/tailwind.css';
+@import '@altafusion/shell/themes/tailwind-shell.css';
+
+@layer base {
+  /*
+   * design-system theme.css pads <main> for legacy pages — shell + content layouts
+   * control spacing for CMS marketing sites.
+   */
+  main:not(.shell-main) {
+    min-height: unset;
+    padding: 0;
+    background: transparent;
+  }
+}

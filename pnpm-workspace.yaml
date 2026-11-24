@@ -1,0 +1,31 @@
+# Settings pnpm 11+ reads from this file only (.npmrc is auth/registry).
+# Hoisted layout: Nuxt Content SQLite and @nuxtjs/i18n resolve modules from the root.
+engineStrict: true
+nodeLinker: hoisted
+dedupePeerDependents: true
+
+overrides:
+  # @nuxt/content SSR queries break on h3 2.x. Remove once @nuxt/content supports h3 2.
+  h3: 1.15.11
+
+allowBuilds:
+  '@parcel/watcher': true
+  better-sqlite3: true
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
+  vue-demi: true
+
+# One-line fix in dist/module/module.mjs. Delete with the patch file once nuxt-studio releases it.
+patchedDependencies:
+  nuxt-studio@1.8.2: patches/nuxt-studio@1.8.2.patch
+minimumReleaseAgeExclude:
+  - '@altafusion/eslint-config@0.3.2'
+  - '@altafusion/fugue-content@0.3.2'
+  - '@altafusion/fugue-nuxt-ui@0.3.2'
+  - '@altafusion/fugue-simple-auth@0.3.2'
+  - '@altafusion/fugue-theme@0.3.2'
+  - '@altafusion/fugue-ui@0.3.2'
+  - '@altafusion/nuxt-base@0.3.2'
+  - '@altafusion/shell@0.3.2'
+  - '@altafusion/test-kit@0.3.2'

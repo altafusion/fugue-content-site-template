@@ -1,0 +1,13 @@
+nav:
+  home: Home
+  about: About
+  demo: Demo
+
+fugueContent404:
+  title: Page Not Found
+  description: The page you requested does not exist or may have moved.
+  actionLabel: Back to Home
+
+cmsArticle:
+  onThisPage: On This Page
+  editPage: Edit

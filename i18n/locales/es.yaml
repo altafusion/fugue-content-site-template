@@ -1,0 +1,13 @@
+nav:
+  home: Inicio
+  about: Quienes Somos
+  demo: Demo
+
+fugueContent404:
+  title: Página No Encontrada
+  description: La página que buscas no existe o puede haber cambiado de ubicación.
+  actionLabel: Volver al Inicio
+
+cmsArticle:
+  onThisPage: En Esta Página
+  editPage: Editar

@@ -1,0 +1,13 @@
+# Netlify build settings. Leave Base directory empty (repository root).
+#   - Builds scope:    SITE_AUTH_ENABLED=true (set below)
+#   - Functions scope: SITE_ACCESS_KEY (if you use the peek gate), STUDIO_GOOGLE_*, STUDIO_GITHUB_TOKEN
+# See README, "Deploy".
+
+[build]
+command = "pnpm install --frozen-lockfile && pnpm build"
+publish = "dist"
+
+[build.environment]
+NODE_VERSION = "24"
+NODE_OPTIONS = "--max-old-space-size=4096"
+SITE_AUTH_ENABLED = "true"

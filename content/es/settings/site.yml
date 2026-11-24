@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://altafusion.com/schemas/site-settings.json
+address:
+  street: 123 Calle Demo
+  city: Austin
+  region: TX
+  postalCode: "78701"
+  country: US
+email: hola@ejemplo.com
+hours: Lun–Vie 9:00–17:00
+phone: +1 (555) 010-0000
+seo:
+  title: Fugue Content
+  description: Sitios de marketing con markdown en @altafusion/fugue-content.
+  titleTemplate: "%s · Fugue Content"
+  ogImage: /favicon.svg
+  twitterCard: summary_large_image
+theme:
+  darkCanvas: black
+siteName: Fugue Content
+landing:
+  sections: []

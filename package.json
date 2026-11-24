@@ -1,0 +1,47 @@
+{
+  "name": "my-site",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "postinstall": "altafusion-nuxt-cli prepare",
+    "clean": "rm -rf .output .nuxt node_modules/.cache node_modules/.vite dist .data",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "altafusion-nuxt-cli build",
+    "generate": "altafusion-nuxt-cli generate",
+    "preview": "altafusion-nuxt-cli preview",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest",
+    "typecheck": "altafusion-nuxt-cli typecheck"
+  },
+  "dependencies": {
+    "@altafusion/fugue-content": "^0.3.2",
+    "@altafusion/fugue-theme": "^0.3.2",
+    "@altafusion/shell": "^0.3.2",
+    "@iconify-json/lucide": "^1.2.157",
+    "@vue/server-renderer": "^3.5.46",
+    "better-sqlite3": "^12.11.1",
+    "nuxt": "^4.6.4",
+    "vue": "^3.5.46"
+  },
+  "devDependencies": {
+    "@altafusion/eslint-config": "^0.3.2",
+    "@altafusion/nuxt-base": "^0.3.2",
+    "@altafusion/test-kit": "^0.3.2",
+    "@antfu/eslint-config": "^10.0.0",
+    "@types/node": "^26.6.6",
+    "debug": "^4.4.3",
+    "eslint": "^10.15.0",
+    "extend": "^3.0.2",
+    "happy-dom": "^21.0.4",
+    "slugify": "^1.6.9",
+    "typescript": "^6.0.3",
+    "vue-router": "^5.5.1",
+    "vue-tsc": "^3.3.14"
+  }
+}
