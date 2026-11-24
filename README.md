@@ -115,8 +115,14 @@ Nav uses locale-neutral paths (`to: '/about'`); shell applies **`localePath()`**
 
 `defineFugueContentSite()` wires `nuxt-studio` with a git-backed `pages` collection (admin route `/_studio`). Studio commits
 markdown under `content/` with the prefix set in `siteConfigStudio`. Production publish needs `STUDIO_GITHUB_TOKEN` on the host.
-`patches/nuxt-studio@1.8.2.patch` fixes one line in the module until upstream releases it; `pnpm-workspace.yaml`
-(`patchedDependencies`) applies it. Delete both when a release includes the fix.
+`@altafusion/fugue-content` installs `nuxt-studio` from the `@altafusion/nuxt-studio` fork (upstream 1.8.2 plus the
+`@nuxtjs/i18n` locale fix and a media id quoting fix) until upstream ships them, so the site needs no patch of its own.
+
+Studio setup notes:
+
+- Create `STUDIO_GITHUB_TOKEN` as the account that owns the repo (fine-grained, only this repo, Contents read and write, with an
+  expiry). A token created by another account gets a 404 from the GitHub API on a private repo.
+- Keep `rootDir: ''` in `siteConfigStudio` for a single-site repo. `'.'` makes Studio send paths GitHub rejects with a 422.
 
 ## Deploy (Netlify)
 
