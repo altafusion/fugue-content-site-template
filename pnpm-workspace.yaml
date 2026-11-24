@@ -20,12 +20,12 @@ allowBuilds:
 patchedDependencies:
   nuxt-studio@1.8.2: patches/nuxt-studio@1.8.2.patch
 minimumReleaseAgeExclude:
-  - '@altafusion/eslint-config@0.3.2'
-  - '@altafusion/fugue-content@0.3.2'
-  - '@altafusion/fugue-nuxt-ui@0.3.2'
-  - '@altafusion/fugue-simple-auth@0.3.2'
-  - '@altafusion/fugue-theme@0.3.2'
-  - '@altafusion/fugue-ui@0.3.2'
-  - '@altafusion/nuxt-base@0.3.2'
-  - '@altafusion/shell@0.3.2'
-  - '@altafusion/test-kit@0.3.2'
+  - '@altafusion/eslint-config@0.3.2 || 0.3.3'
+  - '@altafusion/fugue-content@0.3.2 || 0.3.3'
+  - '@altafusion/fugue-nuxt-ui@0.3.2 || 0.3.3'
+  - '@altafusion/fugue-simple-auth@0.3.2 || 0.3.3'
+  - '@altafusion/fugue-theme@0.3.2 || 0.3.3'
+  - '@altafusion/fugue-ui@0.3.2 || 0.3.3'
+  - '@altafusion/nuxt-base@0.3.2 || 0.3.3'
+  - '@altafusion/shell@0.3.2 || 0.3.3'
+  - '@altafusion/test-kit@0.3.2 || 0.3.3'

@@ -68,20 +68,13 @@ export const siteConfigAuth = fugueContentAuthModeSection('studio')
 // Studio — git-backed CMS (Nuxt Studio)
 // ---------------------------------------------------------------------------
 
-// The stack's helper still defaults to the stack's own repo, so point Studio at THIS site's repo.
-// Replace OWNER and REPO (the GitHub repository Studio commits to).
-const studioRepository = { owner: 'OWNER', repo: 'REPO' }
-const studioBase = fugueContentStudioSection({
+// Replace OWNER and REPO with the GitHub repository Studio commits to.
+export const siteConfigStudio = fugueContentStudioSection({
   rootDir: '.',
-  messagePrefix: 'content:'
+  messagePrefix: 'content:',
+  owner: 'OWNER',
+  repo: 'REPO'
 })
-
-export const siteConfigStudio = {
-  studio: {
-    ...studioBase.studio,
-    repository: { ...studioBase.studio.repository, ...studioRepository }
-  }
-}
 
 // ---------------------------------------------------------------------------
 // Dev tooling — ports, Vite HMR

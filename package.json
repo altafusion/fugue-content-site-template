@@ -20,9 +20,9 @@
     "typecheck": "altafusion-nuxt-cli typecheck"
   },
   "dependencies": {
-    "@altafusion/fugue-content": "^0.3.2",
-    "@altafusion/fugue-theme": "^0.3.2",
-    "@altafusion/shell": "^0.3.2",
+    "@altafusion/fugue-content": "^0.3.3",
+    "@altafusion/fugue-theme": "^0.3.3",
+    "@altafusion/shell": "^0.3.3",
     "@iconify-json/lucide": "^1.2.157",
     "@vue/server-renderer": "^3.5.46",
     "better-sqlite3": "^12.11.1",
@@ -30,15 +30,13 @@
     "vue": "^3.5.46"
   },
   "devDependencies": {
-    "@altafusion/eslint-config": "^0.3.2",
-    "@altafusion/nuxt-base": "^0.3.2",
-    "@altafusion/test-kit": "^0.3.2",
-    "@antfu/eslint-config": "^10.0.0",
+    "@altafusion/eslint-config": "^0.3.3",
+    "@altafusion/nuxt-base": "^0.3.3",
+    "@altafusion/test-kit": "^0.3.3",
     "@types/node": "^26.6.6",
     "debug": "^4.4.3",
     "eslint": "^10.15.0",
     "extend": "^3.0.2",
-    "happy-dom": "^21.0.4",
     "slugify": "^1.6.9",
     "typescript": "^6.0.3",
     "vue-router": "^5.5.1",

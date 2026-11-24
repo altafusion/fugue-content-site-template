@@ -104,8 +104,8 @@ Nav uses locale-neutral paths (`to: '/about'`); shell applies **`localePath()`**
 ## Set up a new site
 
 1. Use this template to create your repository, clone it, then `pnpm install` (Node version in `.nvmrc`).
-2. In `package.json`, rename the package (`my-site`). In `site.config.ts`, set `studioRepository` to your GitHub `owner` and `repo`
-   (the stack's helper still defaults to its own repo, so this override is required).
+2. In `package.json`, rename the package (`my-site`). In `site.config.ts`, set `owner` and `repo` in `fugueContentStudioSection` to your GitHub repository
+   (the defaults point at the stack's own repo).
 3. In `app/app.config.ts`, `site.config.ts` (`appName`, `appNav`), `i18n/locales/*.yaml` and `palette.ts`, replace the sample branding.
 4. Replace the sample `content/` and `public/`.
 5. Copy `.env.example` to `.env`, then `pnpm dev` (default `http://localhost:8001`; use `localhost`, not `127.0.0.1`, for OAuth).

@@ -15,14 +15,14 @@ importers:
   .:
     dependencies:
       '@altafusion/fugue-content':
-        specifier: ^0.3.2
-        version: 0.3.2(3bd8a1a9353a5632ba23572a597fec1a)
+        specifier: ^0.3.3
+        version: 0.3.3(eac4bd8f7d27fc36c031823910e2a664)
       '@altafusion/fugue-theme':
-        specifier: ^0.3.2
-        version: 0.3.2(a835a55775f3dddc22d6dfab08491d14)
+        specifier: ^0.3.3
+        version: 0.3.3(a835a55775f3dddc22d6dfab08491d14)
       '@altafusion/shell':
-        specifier: ^0.3.2
-        version: 0.3.2(a835a55775f3dddc22d6dfab08491d14)
+        specifier: ^0.3.3
+        version: 0.3.3(a835a55775f3dddc22d6dfab08491d14)
       '@iconify-json/lucide':
         specifier: ^1.2.157
         version: 1.2.158
@@ -40,17 +40,14 @@ importers:
         version: 3.5.46(typescript@6.0.3)
     devDependencies:
       '@altafusion/eslint-config':
-        specifier: ^0.3.2
-        version: 0.3.2(@antfu/eslint-config@10.0.0(@typescript-eslint/typescript-estree@8.73.0(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)(vitest@5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))))(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))
+        specifier: ^0.3.3
+        version: 0.3.3(@antfu/eslint-config@10.0.0(@typescript-eslint/typescript-estree@8.73.0(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)(vitest@5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))))(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))
       '@altafusion/nuxt-base':
-        specifier: ^0.3.2
-        version: 0.3.2(23e3ba7acd28b282c0c6a62d2d198563)
+        specifier: ^0.3.3
+        version: 0.3.3(23e3ba7acd28b282c0c6a62d2d198563)
       '@altafusion/test-kit':
-        specifier: ^0.3.2
-        version: 0.3.2(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue@3.5.46(typescript@6.0.3))
-      '@antfu/eslint-config':
-        specifier: ^10.0.0
-        version: 10.0.0(@typescript-eslint/typescript-estree@8.73.0(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)(vitest@5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))
+        specifier: ^0.3.3
+        version: 0.3.3(@types/node@26.6.6)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue@3.5.46(typescript@6.0.3))
       '@types/node':
         specifier: ^26.6.6
         version: 26.6.6
@@ -63,9 +60,6 @@ importers:
       extend:
         specifier: ^3.0.2
         version: 3.0.2
-      happy-dom:
-        specifier: ^21.0.4
-        version: 21.0.4
       slugify:
         specifier: ^1.6.9
         version: 1.6.9
@@ -107,66 +101,61 @@ packages:
     resolution: {integrity: sha512-U4+70Pc5ZS9osnCBCE5Jha/ciHM+Yp+CNMNC/7HvYbNRk1Ldd+f7qO65W5qfhu/TCv+/ozljlXXe9Nj8419DMA==}
     engines: {node: '>=10'}
 
-  '@altafusion/eslint-config@0.3.2':
-    resolution: {integrity: sha512-5371oNsSZaQeZRuxj1TwLsLe6k6OKQvcHUP/cbduqkf9x4pAb2BdL1t+LwfDmjKsGXFf+XsUTSk9scLZs6pkSw==}
+  '@altafusion/eslint-config@0.3.3':
+    resolution: {integrity: sha512-nARV1fRz9fAIGwC/mwLP9FOO9H4x/tGDUzqTk3p3K5T8kCZKLwvAPxtSoneNA3IeRBPxi9axylV3N88NvTcScQ==}
     peerDependencies:
       '@antfu/eslint-config': ^10.0.0
       eslint: ^10.15.0
-    peerDependenciesMeta:
-      '@antfu/eslint-config':
-        optional: true
-      eslint:
-        optional: true
 
-  '@altafusion/fugue-content@0.3.2':
-    resolution: {integrity: sha512-HE1DbNUZ1NZXvJI9B53h3UiWEEgeHkqRuv2H8ltT4mI5gnSGPyxBKnzGYiqlX3C4pMSN5zQY1ISVGSH6OHEnqg==}
+  '@altafusion/fugue-content@0.3.3':
+    resolution: {integrity: sha512-7WI91qm7xIMCgg4RX405/5ftq2Z/SGSc67vLzqxfGWX4d2OMc8ZnDC87h5L+uamvrWJML57jYwf9IP/kvQXb/w==}
     peerDependencies:
-      '@altafusion/fugue-theme': 0.3.2
+      '@altafusion/fugue-theme': 0.3.3
       better-sqlite3: ^12.11.1
       h3: 1.15.11
       nuxt: ^4.6.4
       vue: ^3.5.46
       vue-router: ^5.5.1
 
-  '@altafusion/fugue-nuxt-ui@0.3.2':
-    resolution: {integrity: sha512-69lKedH1vfLBv2HUugrYsL9EjOs2YtZu8ZZPJDChPvOvl7U2v/7vSJGVrItol9SD/NAWhBMZDTW0hRrE2Ugzog==}
+  '@altafusion/fugue-nuxt-ui@0.3.3':
+    resolution: {integrity: sha512-JmIJ8nz+X98a7goYlkgq7UQVOjHwse3TKRaxJz9jQNJvSGIjBT2lR5l9Q/5Cs30XeHkwq+E/zsvbafno9qTb/w==}
     peerDependencies:
       nuxt: '>=4.0.0'
 
-  '@altafusion/fugue-simple-auth@0.3.2':
-    resolution: {integrity: sha512-cgnbY7+Aiktx372CRpXfpkV/5pozZ5OtEkLQHnxKI34PgXrYFxjAFAxdQaPZtskVaiXK4b9PSnw74GCAnkrowA==}
+  '@altafusion/fugue-simple-auth@0.3.3':
+    resolution: {integrity: sha512-QCsLoYo1nDQg6N7u5qVB6rsCiEV2BHY9qsUCJtzYYAUE/Ib5PRcokbMlB9c0sHYXrAEyKqzIURRq58ImMwSukw==}
     peerDependencies:
       '@nuxt/ui': ^4.0.0
       nuxt: '>=4.0.0'
       vue: ^3.5.0
 
-  '@altafusion/fugue-theme@0.3.2':
-    resolution: {integrity: sha512-l5Te02Cz4zxth3istdZ3OwGp3kdcAh/jseteRLkuQy1asYKP1ACwPDCZIWPDymYS7lIk3ranhXLSK59Ky2EapQ==}
+  '@altafusion/fugue-theme@0.3.3':
+    resolution: {integrity: sha512-nIHeT0H2d2zRmTn4F+eoXN2JauoFFZQaAFVSYy/8iWxdxc/CgB1Ladm0MIvmWj4B5YJUIQ+YGPbBXDiqTOYhgA==}
     peerDependencies:
       nuxt: '>=4.0.0'
 
-  '@altafusion/fugue-ui@0.3.2':
-    resolution: {integrity: sha512-vtTqK8cv+eQtED+3Qm87VOEawVTqL/7SjH+O2s4899ifd7bd27hgVBWK8JdJb0UYF9LZ/xIu7y1rhX0LfSZ9ww==}
+  '@altafusion/fugue-ui@0.3.3':
+    resolution: {integrity: sha512-rB4nE0uwA4ZtcgjGsjPSvMaJrmITZeJf9h3AlZ/xoY/xB/iT9pXylFiN0eaOgPj1MGupTvxFKy8i7UhOW53P5g==}
     peerDependencies:
       nuxt: '>=4.0.0'
       vue: ^3.5.0
 
-  '@altafusion/nuxt-base@0.3.2':
-    resolution: {integrity: sha512-YQKt3a4jluGSsLXZbm0aJtuMD679kVhc2RyoKJBcgdHrsv8vaXfop+aTjqdqr94IIOvPlDCx0De7u8ybd3i5IA==}
+  '@altafusion/nuxt-base@0.3.3':
+    resolution: {integrity: sha512-BWwKXxS03Ouf/jYyhSbwuuT782wSe+j0HyWyIX6d52/Q8T/qYnz0fnhjjCCWWRlr3T4lPilFtKZqpGLedBWhsQ==}
     hasBin: true
     peerDependencies:
       nuxt: '>=4.0.0'
       vite: '>=6.0.0'
 
-  '@altafusion/shell@0.3.2':
-    resolution: {integrity: sha512-ip84oa8L5Gb8Yqpkn6eTM4GwASniIkTVF4VaEOOsxkEW1XP9kUxiLbJOrm0wrZMPag7KoChY/MDpc499gAoPow==}
+  '@altafusion/shell@0.3.3':
+    resolution: {integrity: sha512-jSaTCbeNcC8Y5rdnPRsPTq3uwFbPtbO+h60DReu6qjBtx2KpUNdRrP9B6SIaM9vTBdheck59kyVJGQSZQFoyGA==}
     peerDependencies:
       nuxt: '>=4.0.0'
       vue: ^3.5.0
       vue-router: ^5.0.0
 
-  '@altafusion/test-kit@0.3.2':
-    resolution: {integrity: sha512-3WZ9JAFuCI8/pgMrFFZT4+qHwpNjEsIB5OPSerxbQVhyOfo8by9g+2BvLGCJJyAYbpngzLefVo8NruZmk3OYXQ==}
+  '@altafusion/test-kit@0.3.3':
+    resolution: {integrity: sha512-YuIVBfGpOVNyJ586Lrb2qFp1W/3WQjI1vRIRRz5g4HajygpoggEFqDHFBgj8DFlq0vDcSD6L4UpvrBiMZ2GgXw==}
     peerDependencies:
       '@nuxt/test-utils': '>=4.0.0'
     peerDependenciesMeta:
@@ -7166,17 +7155,17 @@ snapshots:
 
   '@alloc/quick-lru@5.3.0': {}
 
-  '@altafusion/eslint-config@0.3.2(@antfu/eslint-config@10.0.0(@typescript-eslint/typescript-estree@8.73.0(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)(vitest@5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))))(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))':
-    optionalDependencies:
+  '@altafusion/eslint-config@0.3.3(@antfu/eslint-config@10.0.0(@typescript-eslint/typescript-estree@8.73.0(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)(vitest@5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))))(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))':
+    dependencies:
       '@antfu/eslint-config': 10.0.0(@typescript-eslint/typescript-estree@8.73.0(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)(vitest@5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))
       eslint: 10.15.0(jiti@2.7.0)(supports-color@10.2.2)
 
-  '@altafusion/fugue-content@0.3.2(3bd8a1a9353a5632ba23572a597fec1a)':
+  '@altafusion/fugue-content@0.3.3(eac4bd8f7d27fc36c031823910e2a664)':
     dependencies:
-      '@altafusion/fugue-simple-auth': 0.3.2(1462e8135f2488b35e741fc8ec306143)
-      '@altafusion/fugue-theme': 0.3.2(a835a55775f3dddc22d6dfab08491d14)
-      '@altafusion/nuxt-base': 0.3.2(23e3ba7acd28b282c0c6a62d2d198563)
-      '@altafusion/shell': 0.3.2(a835a55775f3dddc22d6dfab08491d14)
+      '@altafusion/fugue-simple-auth': 0.3.3(1462e8135f2488b35e741fc8ec306143)
+      '@altafusion/fugue-theme': 0.3.3(a835a55775f3dddc22d6dfab08491d14)
+      '@altafusion/nuxt-base': 0.3.3(23e3ba7acd28b282c0c6a62d2d198563)
+      '@altafusion/shell': 0.3.3(a835a55775f3dddc22d6dfab08491d14)
       '@nuxt/content': 3.17.0(@nuxt/schema@4.6.4)(@oxc-project/types@0.156.0)(better-sqlite3@12.11.1)(confbox@0.2.4)(dotenv@17.4.2)(esbuild@0.28.2)(giget@3.3.1)(magic-string@1.4.5)(magicast@0.5.5)(mlly@1.8.2)(oxc-parser@0.141.0)(rolldown@1.2.19)(rollup@4.68.8)(supports-color@10.2.2)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))
       '@nuxt/kit': 4.6.4(@nuxt/schema@4.6.4)(confbox@0.2.4)(dotenv@17.4.2)(giget@3.3.1)(jiti@2.7.0)(magic-string@1.4.5)(mlly@1.8.2)(oxc-parser@0.141.0)(rolldown@1.2.19)(unplugin@3.7.0(esbuild@0.28.2)(rolldown@1.2.19)(rollup@4.68.8)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))
       '@nuxtjs/i18n': 10.6.0(@nuxt/schema@4.6.4)(db0@0.3.4(better-sqlite3@12.11.1))(dotenv@17.4.2)(esbuild@0.28.2)(giget@3.3.1)(ioredis@5.11.1(supports-color@10.2.2))(jiti@2.7.0)(rolldown@1.2.19)(rollup@4.68.8)(supports-color@10.2.2)(typescript@6.0.3)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue@3.5.46(typescript@6.0.3))
@@ -7307,10 +7296,10 @@ snapshots:
       - yup
       - zod
 
-  '@altafusion/fugue-nuxt-ui@0.3.2(a835a55775f3dddc22d6dfab08491d14)':
+  '@altafusion/fugue-nuxt-ui@0.3.3(a835a55775f3dddc22d6dfab08491d14)':
     dependencies:
-      '@altafusion/eslint-config': 0.3.2(@antfu/eslint-config@10.0.0(@typescript-eslint/typescript-estree@8.73.0(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)(vitest@5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))))(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))
-      '@altafusion/nuxt-base': 0.3.2(23e3ba7acd28b282c0c6a62d2d198563)
+      '@altafusion/eslint-config': 0.3.3(@antfu/eslint-config@10.0.0(@typescript-eslint/typescript-estree@8.73.0(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)(vitest@5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))))(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))
+      '@altafusion/nuxt-base': 0.3.3(23e3ba7acd28b282c0c6a62d2d198563)
       '@nuxt/eslint': 1.17.0(@nuxt/schema@4.6.4)(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(confbox@0.2.4)(dotenv@17.4.2)(esbuild@0.28.2)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(giget@3.3.1)(jiti@2.7.0)(magic-string@1.4.5)(oxc-parser@0.141.0)(rolldown@1.2.19)(rollup@4.68.8)(srvx@1.0.8)(supports-color@10.2.2)(typescript@6.0.3)(unplugin@3.7.0(esbuild@0.28.2)(rolldown@1.2.19)(rollup@4.68.8)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))
       '@nuxt/icon': 2.6.3(@nuxt/schema@4.6.4)(confbox@0.2.4)(dotenv@17.4.2)(giget@3.3.1)(jiti@2.7.0)(magic-string@1.4.5)(nitropack@2.13.6(bare-buffer@3.7.3)(better-sqlite3@12.11.1)(oxc-parser@0.141.0)(rolldown@1.2.19)(srvx@1.0.8)(supports-color@10.2.2)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))(oxc-parser@0.141.0)(rolldown@1.2.19)(unplugin@3.7.0(esbuild@0.28.2)(rolldown@1.2.19)(rollup@4.68.8)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue@3.5.46(typescript@6.0.3))
       '@nuxt/ui': 4.13.0(2dcd5571d892144b552a87464f64ff60)
@@ -7424,7 +7413,7 @@ snapshots:
       - yup
       - zod
 
-  '@altafusion/fugue-simple-auth@0.3.2(1462e8135f2488b35e741fc8ec306143)':
+  '@altafusion/fugue-simple-auth@0.3.3(1462e8135f2488b35e741fc8ec306143)':
     dependencies:
       '@nuxt/kit': 4.6.4(@nuxt/schema@4.6.4)(confbox@0.2.4)(dotenv@17.4.2)(giget@3.3.1)(jiti@2.7.0)(magic-string@1.4.5)(mlly@1.8.2)(oxc-parser@0.141.0)(rolldown@1.2.19)(unplugin@3.7.0(esbuild@0.28.2)(rolldown@1.2.19)(rollup@4.68.8)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))
       '@nuxt/ui': 4.13.0(2dcd5571d892144b552a87464f64ff60)
@@ -7443,10 +7432,10 @@ snapshots:
       - rolldown
       - unplugin
 
-  '@altafusion/fugue-theme@0.3.2(a835a55775f3dddc22d6dfab08491d14)':
+  '@altafusion/fugue-theme@0.3.3(a835a55775f3dddc22d6dfab08491d14)':
     dependencies:
-      '@altafusion/fugue-nuxt-ui': 0.3.2(a835a55775f3dddc22d6dfab08491d14)
-      '@altafusion/nuxt-base': 0.3.2(23e3ba7acd28b282c0c6a62d2d198563)
+      '@altafusion/fugue-nuxt-ui': 0.3.3(a835a55775f3dddc22d6dfab08491d14)
+      '@altafusion/nuxt-base': 0.3.3(23e3ba7acd28b282c0c6a62d2d198563)
       '@iconify-json/lucide': 1.2.158
       '@iconify-json/simple-icons': 1.2.103
       '@nuxt/eslint': 1.17.0(@nuxt/schema@4.6.4)(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(confbox@0.2.4)(dotenv@17.4.2)(esbuild@0.28.2)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(giget@3.3.1)(jiti@2.7.0)(magic-string@1.4.5)(oxc-parser@0.141.0)(rolldown@1.2.19)(rollup@4.68.8)(srvx@1.0.8)(supports-color@10.2.2)(typescript@6.0.3)(unplugin@3.7.0(esbuild@0.28.2)(rolldown@1.2.19)(rollup@4.68.8)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))
@@ -7562,9 +7551,9 @@ snapshots:
       - yup
       - zod
 
-  '@altafusion/fugue-ui@0.3.2(a835a55775f3dddc22d6dfab08491d14)':
+  '@altafusion/fugue-ui@0.3.3(a835a55775f3dddc22d6dfab08491d14)':
     dependencies:
-      '@altafusion/fugue-nuxt-ui': 0.3.2(a835a55775f3dddc22d6dfab08491d14)
+      '@altafusion/fugue-nuxt-ui': 0.3.3(a835a55775f3dddc22d6dfab08491d14)
       '@vueuse/core': 14.4.0(vue@3.5.46(typescript@6.0.3))
       nuxt: 4.6.4(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.13(supports-color@10.2.2)))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.13(supports-color@10.2.2)))(@oxc-project/types@0.156.0)(@types/node@26.6.6)(@vue/compiler-sfc@3.5.46)(acorn@8.19.0)(bare-buffer@3.7.3)(better-sqlite3@12.11.1)(confbox@0.2.4)(db0@0.3.4(better-sqlite3@12.11.1))(dotenv@17.4.2)(esbuild@0.28.2)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(giget@3.3.1)(ioredis@5.11.1(supports-color@10.2.2))(lightningcss@1.33.0)(mlly@1.8.2)(optionator@0.9.4)(oxc-parser@0.141.0)(rolldown@1.2.19)(rollup-plugin-visualizer@7.1.3(rolldown@1.2.19)(rollup@4.68.8))(rollup@4.68.8)(srvx@1.0.8)(supports-color@10.2.2)(terser@5.51.4)(typescript@6.0.3)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue-tsc@3.3.14(typescript@6.0.3))(yaml@2.9.1)
       tailwind-merge: 3.7.1
@@ -7676,9 +7665,9 @@ snapshots:
       - yup
       - zod
 
-  '@altafusion/nuxt-base@0.3.2(23e3ba7acd28b282c0c6a62d2d198563)':
+  '@altafusion/nuxt-base@0.3.3(23e3ba7acd28b282c0c6a62d2d198563)':
     dependencies:
-      '@altafusion/eslint-config': 0.3.2(@antfu/eslint-config@10.0.0(@typescript-eslint/typescript-estree@8.73.0(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)(vitest@5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))))(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))
+      '@altafusion/eslint-config': 0.3.3(@antfu/eslint-config@10.0.0(@typescript-eslint/typescript-estree@8.73.0(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/utils@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@vue/compiler-sfc@3.5.46)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)(vitest@5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))))(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))
       '@nuxt/kit': 4.6.4(@nuxt/schema@4.6.4)(confbox@0.2.4)(dotenv@17.4.2)(giget@3.3.1)(jiti@2.7.0)(magic-string@1.4.5)(mlly@1.8.2)(oxc-parser@0.141.0)(rolldown@1.2.19)(unplugin@3.7.0(esbuild@0.28.2)(rolldown@1.2.19)(rollup@4.68.8)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1)))
       defu: 6.1.7
       nuxt: 4.6.4(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.13(supports-color@10.2.2)))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.13(supports-color@10.2.2)))(@oxc-project/types@0.156.0)(@types/node@26.6.6)(@vue/compiler-sfc@3.5.46)(acorn@8.19.0)(bare-buffer@3.7.3)(better-sqlite3@12.11.1)(confbox@0.2.4)(db0@0.3.4(better-sqlite3@12.11.1))(dotenv@17.4.2)(esbuild@0.28.2)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(giget@3.3.1)(ioredis@5.11.1(supports-color@10.2.2))(lightningcss@1.33.0)(mlly@1.8.2)(optionator@0.9.4)(oxc-parser@0.141.0)(rolldown@1.2.19)(rollup-plugin-visualizer@7.1.3(rolldown@1.2.19)(rollup@4.68.8))(rollup@4.68.8)(srvx@1.0.8)(supports-color@10.2.2)(terser@5.51.4)(typescript@6.0.3)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue-tsc@3.3.14(typescript@6.0.3))(yaml@2.9.1)
@@ -7712,9 +7701,9 @@ snapshots:
       - unplugin
       - webpack
 
-  '@altafusion/shell@0.3.2(a835a55775f3dddc22d6dfab08491d14)':
+  '@altafusion/shell@0.3.3(a835a55775f3dddc22d6dfab08491d14)':
     dependencies:
-      '@altafusion/fugue-ui': 0.3.2(a835a55775f3dddc22d6dfab08491d14)
+      '@altafusion/fugue-ui': 0.3.3(a835a55775f3dddc22d6dfab08491d14)
       nuxt: 4.6.4(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.13(supports-color@10.2.2)))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.13(supports-color@10.2.2)))(@oxc-project/types@0.156.0)(@types/node@26.6.6)(@vue/compiler-sfc@3.5.46)(acorn@8.19.0)(bare-buffer@3.7.3)(better-sqlite3@12.11.1)(confbox@0.2.4)(db0@0.3.4(better-sqlite3@12.11.1))(dotenv@17.4.2)(esbuild@0.28.2)(eslint@10.15.0(jiti@2.7.0)(supports-color@10.2.2))(giget@3.3.1)(ioredis@5.11.1(supports-color@10.2.2))(lightningcss@1.33.0)(mlly@1.8.2)(optionator@0.9.4)(oxc-parser@0.141.0)(rolldown@1.2.19)(rollup-plugin-visualizer@7.1.3(rolldown@1.2.19)(rollup@4.68.8))(rollup@4.68.8)(srvx@1.0.8)(supports-color@10.2.2)(terser@5.51.4)(typescript@6.0.3)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue-tsc@3.3.14(typescript@6.0.3))(yaml@2.9.1)
       vue: 3.5.46(typescript@6.0.3)
       vue-router: 5.5.1(@vue/compiler-sfc@3.5.46)(esbuild@0.28.2)(rolldown@1.2.19)(rollup@4.68.8)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue@3.5.46(typescript@6.0.3))
@@ -7824,10 +7813,11 @@ snapshots:
       - yup
       - zod
 
-  '@altafusion/test-kit@0.3.2(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue@3.5.46(typescript@6.0.3))':
+  '@altafusion/test-kit@0.3.3(@types/node@26.6.6)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue@3.5.46(typescript@6.0.3))':
     dependencies:
       '@playwright/test': 1.65.1
       '@vitejs/plugin-vue': 6.0.11(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))(vue@3.5.46(typescript@6.0.3))
+      happy-dom: 21.0.4
       vitest: 5.1.1(@types/node@26.6.6)(happy-dom@21.0.4)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.4)(yaml@2.9.1))
     transitivePeerDependencies:
       - '@edge-runtime/vm'
@@ -7839,9 +7829,10 @@ snapshots:
       - '@vitest/coverage-istanbul'
       - '@vitest/coverage-v8'
       - '@vitest/ui'
-      - happy-dom
+      - bufferutil
       - jsdom
       - msw
+      - utf-8-validate
       - vite
       - vue
 
