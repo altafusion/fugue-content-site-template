@@ -16,5 +16,7 @@ Run lint, typecheck and tests on the touched area before calling work done.
 
 Cursor loads `.cursor/rules/` natively; Claude Code imports them here so both tools follow the same source.
 
+@.cursor/rules/nuxt-omit-autoimports.mdc
 @.cursor/rules/nuxt-ui-first.mdc
+@.cursor/rules/vue-props-destructure.mdc
 @.cursor/rules/vue-tailwind-classes.mdc

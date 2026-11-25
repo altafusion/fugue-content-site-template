@@ -1,0 +1,48 @@
+---
+description: Omit imports for symbols Nuxt already auto-imports (Vue APIs, Nuxt composables, components)
+globs: **/*.{vue,ts}
+alwaysApply: false
+---
+
+# Omit Nuxt Auto-Imported Symbols
+
+Nuxt auto-imports these in app/layer code — **do not import them**:
+
+- **Vue APIs:** `ref`, `computed`, `reactive`, `watch`, `watchEffect`, `onMounted`, `nextTick`, …
+- **Nuxt composables:** `useRoute`, `useRouter`, `navigateTo`, `useState`, `useNuxtApp`, `useRuntimeConfig`, `useFetch`, `useAsyncData`, `useSeoMeta`, `definePageMeta`, …
+- **Components (incl. Nuxt UI `U*`):** use directly in the template — no `#components` / `@nuxt/ui` import.
+
+```vue
+<script setup lang="ts">
+// ❌ redundant — all three are auto-imported
+import { computed } from 'vue'
+import { UButton } from '#components'
+const route = useRoute()
+</script>
+<template>
+  <UButton :to="route.path" /> <!-- ✅ no import needed -->
+</template>
+```
+
+## Exception: Types Are Not Auto-Imported
+
+Type-only imports are fine and often required — keep them:
+
+- **Component prop types** — derive from the component with a **type-only**
+  `#components` import:
+  ```ts
+  import type { UButton } from '#components'
+  type UButtonProps = InstanceType<typeof UButton>['$props']
+  ```
+- **Vue type helpers** (`Ref`, `ComputedRef`, `PropType`) still need
+  `import type { … } from 'vue'`.
+
+## Exception: Portable / Engine Code
+
+`.ts` written to be framework-portable or extractable may import Vue APIs from
+`vue` explicitly on purpose — don't strip those.
+
+## IDE Note
+
+If the IDE reports `Cannot find name 'computed'`, run **`nuxt prepare`** or
+**`pnpm dev`** so `.nuxt/imports.d.ts` exists.

@@ -1,0 +1,45 @@
+---
+description: Vue props — narrative destructure with inline defaults, not withDefaults
+globs: **/*.vue
+alwaysApply: false
+---
+
+# Vue Props — Narrative Destructure
+
+In `<script setup>`, declare props by **destructuring `defineProps` with inline defaults**. Do not use `withDefaults`.
+
+## Pattern
+
+```typescript
+const {
+  label = 'Edit Content',
+  requireSession = true,
+  navItems = [],
+} = defineProps<{
+  label?: string
+  requireSession?: boolean
+  navItems?: FugueNavItem[]
+}>()
+```
+
+- Put defaults on the destructured binding (`prop = default`), not in a second argument.
+- Omit props without defaults from the destructure default list.
+- Use `const { … } = defineProps<…>()` even when props are only used in the template.
+- In script, reference destructured names directly (`sectionClass`), not `props.sectionClass`.
+
+## When Not to Destructure
+
+- Props passed to composables that expect a reactive `props` object — pass explicitly or use `toRefs(props)` if the API requires it.
+- Do not reintroduce `withDefaults` for array/object defaults; use `navItems = []` unless the prop is mutated in place (rare).
+
+## Examples
+
+```typescript
+// ❌ BAD
+const props = withDefaults(defineProps<{ variant?: string }>(), {
+  variant: 'primary',
+})
+
+// ✅ GOOD
+const { variant = 'primary' } = defineProps<{ variant?: string }>()
+```

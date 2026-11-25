@@ -147,8 +147,15 @@ server binds after Nuxt config loads and the boot splash (`app/spa-loading-templ
 
 ## Agent Rules
 
-`.cursor/rules/` holds the styling rules a new site starts with: use native Nuxt UI components and conventions first
-(`nuxt-ui-first.mdc`), and style with Tailwind classes and semantic tokens, never scoped CSS (`vue-tailwind-classes.mdc`).
+`.cursor/rules/` holds the code rules a new site starts with:
+
+| Rule | Says |
+|------|------|
+| `nuxt-ui-first.mdc` | Use native Nuxt UI components and conventions before building custom ones |
+| `vue-tailwind-classes.mdc` | Style with Tailwind classes and semantic tokens, never scoped CSS |
+| `vue-props-destructure.mdc` | Declare props by destructuring `defineProps` with inline defaults, no `withDefaults` |
+| `nuxt-omit-autoimports.mdc` | Do not import what Nuxt already auto-imports |
+
 Cursor loads them natively and `CLAUDE.md` imports them for Claude Code. Edit or add rules there; keep `CLAUDE.md` for what is
 specific to your site.
 
