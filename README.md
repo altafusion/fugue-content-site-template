@@ -145,6 +145,13 @@ socket path limit (`connect EINVAL ...nuxt-vite-node....sock`); the script short
 server binds after Nuxt config loads and the boot splash (`app/spa-loading-template.html`) shows meanwhile. Set `SITE_DEV_PORT` or
 `PORT` in `.env`. `nodeLinker: hoisted` in `pnpm-workspace.yaml` is required for Content SQLite.
 
+## Agent Rules
+
+`.cursor/rules/` holds the styling rules a new site starts with: use native Nuxt UI components and conventions first
+(`nuxt-ui-first.mdc`), and style with Tailwind classes and semantic tokens, never scoped CSS (`vue-tailwind-classes.mdc`).
+Cursor loads them natively and `CLAUDE.md` imports them for Claude Code. Edit or add rules there; keep `CLAUDE.md` for what is
+specific to your site.
+
 ## Related packages
 
 | Package | Use |

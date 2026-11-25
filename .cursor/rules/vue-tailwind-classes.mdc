@@ -1,0 +1,43 @@
+---
+description: Vue layout and styling — Tailwind utility classes and Nuxt UI semantic tokens, never scoped or custom CSS
+globs: **/*.vue
+alwaysApply: false
+---
+
+# Tailwind Classes, Not Custom CSS
+
+Style every layout, component and page with Tailwind utility classes in the template. Do not add `<style>` blocks (scoped or
+not) or hand-written CSS for spacing, sizing, layout, colour or typography.
+
+- Carry colour with Nuxt UI semantic tokens (`text-muted`, `bg-elevated`, `text-primary`), never raw palette colours
+  (`text-gray-600`), so light and dark mode and the site palette apply automatically.
+- Variant props map to classes through a lookup object, so each class is a complete literal the scanner can see:
+  `const gapClasses = { sm: 'gap-4', md: 'gap-6' }` then `:class="gapClasses[gap]"`. Never build class names by string
+  concatenation (`` `gap-${gap}` ``): Tailwind will not generate them.
+- Style content rendered inside a slot (markdown headings, paragraphs) with arbitrary variants on the wrapper, such as
+  `[&_h1]:mb-3` or `[&>li]:py-1`.
+- The one inline style allowed is a free-form runtime value no class can express, such as a user-supplied `object-position`.
+- If a utility seems not to apply, find out why (a stale dev server, a class built by concatenation, a specificity clash)
+  instead of falling back to custom CSS. If the need genuinely cannot be written in utilities (a keyframe animation, say),
+  ask the owner first.
+
+## Reusable Components
+
+Follow the `@altafusion/fugue-ui` pattern (`AccentSectionCard`, `TileSelector`) so a component can move into fugue-ui
+unchanged:
+
+- Name the slots (`root`, `title`, `list`, ...). Keep each slot's classes in a preset record keyed by variant, in a shared
+  module, not inline in the template.
+- Take a `ui` prop of slot overrides merged over the preset; `class` falls through to the root.
+- No single-letter prefixes (`U*` is Nuxt UI only). Check Nuxt UI first (see `nuxt-ui-first.mdc`).
+
+## Examples
+
+```vue
+<!-- ❌ BAD -->
+<template><div class="two-columns"><slot /></div></template>
+<style scoped>.two-columns { display: grid; gap: 3rem; }</style>
+
+<!-- ✅ GOOD -->
+<template><div class="grid gap-12"><slot /></div></template>
+```

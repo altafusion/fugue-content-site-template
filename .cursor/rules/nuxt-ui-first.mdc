@@ -1,0 +1,21 @@
+---
+description: Use Nuxt UI native components and conventions whenever possible, before building anything custom
+globs: "**/*.{vue,md,ts}"
+alwaysApply: false
+---
+
+# Nuxt UI First
+
+Before writing a component, a layout or a style, check Nuxt UI. Use its native components and follow its conventions
+whenever they can do the job. This is tier 1 of the Fugue component tiers (Nuxt UI, then `@altafusion/fugue-ui`, then
+`@altafusion/shell`, then app-specific); never hand-roll what a tier above already provides.
+
+- **Components:** reach for the `U*` component first (`UAvatar` for a round photo, `UBadge` for chips and tags, `UButton`,
+  `UPage*`, `UCard`, `UAlert`, ...). In content pages use the same component through MDC (`::u-avatar`, `::u-button`).
+- **Customise in order:** theme tokens, then `app.config` `ui.<component>`, then the `ui` prop (per slot), then `class` as a
+  last resort. Restyle with the `ui` prop; never write a wrapper component whose only job is to restyle a `U*`.
+- **Conventions:** semantic colour tokens and roles (`text-muted`, `bg-elevated`, `color="primary"`), the component's own
+  `size`, `variant` and `color` props, and its slots.
+- **Build custom only when Nuxt UI has no equivalent,** or when adding behaviour or domain knowledge (a skills group is
+  domain; a round photo is not). Say what Nuxt UI offered and why it did not fit before building.
+- A new component never takes the `U*` prefix: that is reserved for Nuxt UI.
