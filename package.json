@@ -11,6 +11,8 @@
     "dev": "node scripts/dev.mjs",
     "postinstall": "altafusion-nuxt-cli prepare",
     "clean": "rm -rf .output .nuxt node_modules/.cache node_modules/.vite dist .data",
+    "link:fugue": "bash scripts/dev/link-local-fugue.sh",
+    "unlink:fugue": "bash scripts/dev/unlink-local-fugue.sh",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "build": "altafusion-nuxt-cli build",
