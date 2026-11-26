@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Block committing the local Fugue link (pnpm link:fugue). The link is for testing only; see docs/local-fugue-link.md.
+# Enabled by the `prepare` script (git config core.hooksPath .githooks). Bypass only on purpose with: git commit --no-verify
+set -euo pipefail
+
+if git show :pnpm-workspace.yaml 2>/dev/null | grep -qE 'fugue-link:|link:/'; then
+  echo "error: pnpm-workspace.yaml contains the local Fugue link block (pnpm link:fugue)." >&2
+  echo "       Run: pnpm unlink:fugue && git checkout -- package.json pnpm-lock.yaml pnpm-workspace.yaml" >&2
+  exit 1
+fi
+
+if git show :pnpm-lock.yaml 2>/dev/null | grep -qE 'link:(/|\.\./).*fugue'; then
+  echo "error: pnpm-lock.yaml contains link: entries pointing at a local Fugue checkout." >&2
+  echo "       Run: pnpm unlink:fugue && git checkout -- pnpm-lock.yaml && pnpm install --frozen-lockfile" >&2
+  exit 1
+fi

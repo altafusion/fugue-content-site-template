@@ -12,6 +12,8 @@ pnpm lint && pnpm typecheck && pnpm test && pnpm build
 
 Run lint, typecheck and tests on the touched area before calling work done.
 
+To try an unpublished Fugue change, see `docs/local-fugue-link.md` (link only to test, unlink before committing; a pre-commit hook blocks the link).
+
 ## Rules
 
 Cursor loads `.cursor/rules/` natively; Claude Code imports them here so both tools follow the same source.
