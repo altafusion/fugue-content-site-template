@@ -1,6 +1,12 @@
 @import '@altafusion/fugue-theme/themes/tailwind.css';
 @import '@altafusion/shell/themes/tailwind-shell.css';
 
+/*
+ * Tailwind only generates classes it finds in scanned files. Nuxt UI's generated sources cover `app/`, the layers and the packages,
+ * not `content/`, so classes used only in Markdown (a `size-*` on a `u-avatar`, a `ui` override on a `::column`) would never be created.
+ */
+@source "../../../content/**/*";
+
 @layer base {
   /*
    * design-system theme.css pads <main> for legacy pages — shell + content layouts
