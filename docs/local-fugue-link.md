@@ -20,7 +20,7 @@ while unlinked.
    ```
 
 3. Restart the dev server (`pnpm dev`). Restart again after every link or unlink. If something looks stale, stop the server and run
-   `pnpm clean` first (it clears `.nuxt`, `.output`, `node_modules/.cache`, `node_modules/.vite`, `dist` and `.data`).
+   `pnpm reset` first (it deletes `.nuxt`, `.output`, `.data`, `.netlify`, `dist`, `coverage`, `.eslintcache` and `node_modules`, then reinstalls).
 4. Edit Fugue and the site together. Fugue edits show up live; nothing is published.
 5. **Unlink before committing anything in this site:**
 
@@ -54,6 +54,6 @@ nine `@altafusion/*` stack packages are linked; `@altafusion/nuxt-studio` is not
 | --- | --- |
 | "Failed to load content." after clicking to a content page, with a wasm error in the console | An old checkout. Fixed in Fugue 0.4.0 (`nuxt-base` allows a linked checkout in Vite `server.fs.allow`). Pull the checkout, restart. |
 | Pages look like old behavior | The checkout is behind `origin/main`. `git pull --ff-only` in it, restart. |
-| Odd client errors right after linking | Stop the dev server, run `pnpm clean`, and restart. If that is not enough, `pnpm reset` also deletes `node_modules` and reinstalls (never run it while the dev server is up). |
+| Odd client errors right after linking | Stop the dev server, run `pnpm reset` (a full clean and reinstall; never run it while the dev server is up), and restart. |
 | `pnpm install` refuses a new `@altafusion/*` version | Add it to `minimumReleaseAgeExclude`. |
 | Duplicate Vue or Nuxt Content errors | The link resolves dependencies from the Fugue checkout. Unlink, restart, and report it in Fugue. |
